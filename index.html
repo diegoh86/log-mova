@@ -89,6 +89,14 @@
     .gold-gradient {
       background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
     }
+    /* Ocultar barra de rolagem no carrossel mobile mantendo a rolagem fluida */
+    .scrollbar-none::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-none {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
@@ -124,8 +132,8 @@
       <div class="flex items-center justify-between h-20">
         
         <!-- LOGOMARCA -->
-        <a href="#inicio" class="flex items-center gap-3 group">
-          <img src="assets/img/logo.png" alt="LogMova Transportes" class="h-14 w-auto object-contain transition-transform group-hover:scale-105">
+        <a href="#inicio" class="flex items-center gap-3 group py-1">
+          <img src="assets/img/logo.png" alt="LogMova Transportes" class="h-14 sm:h-16 w-auto object-contain transition-transform group-hover:scale-105">
         </a>
 
         <!-- NAVEGAÇÃO DESKTOP -->
@@ -141,8 +149,8 @@
           <a href="#cobertura" class="hover:text-brand-purple transition">Área de Atuação</a>
         </nav>
 
-        <!-- CTA BOTÃO WHATSAPP -->
-        <div class="hidden sm:flex items-center gap-3">
+        <!-- CTA BOTÃO WHATSAPP DESKTOP -->
+        <div class="hidden lg:flex items-center gap-3">
           <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." 
              target="_blank" 
              rel="noopener"
@@ -152,10 +160,19 @@
           </a>
         </div>
 
-        <!-- BOTÃO MOBILE TOGGLE -->
-        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-lg text-slate-700 hover:text-brand-purple hover:bg-slate-100 focus:outline-none" aria-label="Abrir menu">
-          <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
-        </button>
+        <!-- AÇÕES MOBILE (WhatsApp Rápido + Toggle Menu) -->
+        <div class="flex items-center gap-2.5 lg:hidden">
+          <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." 
+             target="_blank" 
+             rel="noopener"
+             class="inline-flex items-center gap-1.5 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-bold px-3.5 py-1.5 rounded-full text-xs shadow-sm transition">
+            <i class="fa-brands fa-whatsapp text-sm text-brand-purpleDark"></i>
+            <span>Orçamento</span>
+          </a>
+          <button id="mobileMenuBtn" type="button" class="p-2 rounded-lg text-slate-700 hover:text-brand-purple hover:bg-slate-100 focus:outline-none" aria-label="Abrir menu">
+            <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+          </button>
+        </div>
 
       </div>
     </div>
@@ -342,8 +359,8 @@
           </div>
 
           <div class="space-y-1">
-            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">RJ & RMR</div>
-            <div class="text-xs sm:text-sm text-white/80 font-medium">Cobertura Metropolitana</div>
+            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">Todo o RJ</div>
+            <div class="text-xs sm:text-sm text-white/80 font-medium">Rio & Grande Rio</div>
           </div>
 
         </div>
@@ -882,89 +899,104 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- DEPOIMENTO 1 -->
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
-            <div class="space-y-4">
-              <div class="flex text-amber-400 text-sm gap-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+        <!-- CARROSSEL DE DEPOIMENTOS (Mobile: Swipe horizontal / Desktop: Grid 3 colunas) -->
+        <div class="relative">
+          <div id="depoimentosTrack" class="flex overflow-x-auto snap-x snap-mandatory scrollbar-none md:grid md:grid-cols-3 gap-6 pb-2 md:pb-0 scroll-smooth">
+            
+            <!-- DEPOIMENTO 1 -->
+            <div class="w-[86%] sm:w-[75%] md:w-auto shrink-0 md:shrink snap-center bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+              <div class="space-y-4">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm leading-relaxed italic">
+                  "Trabalhamos com horto em Guaratiba e encontrar alguém que saiba transportar plantas com cuidado é raridade. A equipe da LogMova é impecável: as folhagens chegam intactas aos nossos clientes na Barra e Zona Sul!"
+                </p>
               </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Trabalhamos com horto em Guaratiba e encontrar alguém que saiba transportar plantas com cuidado é raridade. A equipe da LogMova é impecável: as folhagens chegam intactas aos nossos clientes na Barra e Zona Sul!"
-              </p>
+              <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-purple text-white font-bold flex items-center justify-center text-sm">
+                  RH
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-brand-dark">Renata H.</h4>
+                  <p class="text-xs text-slate-500">Horto & Paisagismo (Guaratiba/RJ)</p>
+                </div>
+              </div>
             </div>
-            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-purple text-white font-bold flex items-center justify-center text-sm">
-                RH
+
+            <!-- DEPOIMENTO 2 -->
+            <div class="w-[86%] sm:w-[75%] md:w-auto shrink-0 md:shrink snap-center bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+              <div class="space-y-4">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm leading-relaxed italic">
+                  "Excelente atendimento! Super pontuais, mandam mensagem avisando quando estão a caminho e as mercadorias chegaram 100% perfeitas. Preço justo e muito profissionalismo da Glauce e Camilla."
+                </p>
               </div>
-              <div>
-                <h4 class="font-bold text-sm text-brand-dark">Renata H.</h4>
-                <p class="text-xs text-slate-500">Horto & Paisagismo (Guaratiba/RJ)</p>
+              <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-gold text-brand-purpleDark font-bold flex items-center justify-center text-sm">
+                  MC
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-brand-dark">Marcos Costa</h4>
+                  <p class="text-xs text-slate-500">Comércio & Varejo (Centro/RJ)</p>
+                </div>
               </div>
             </div>
+
+            <!-- DEPOIMENTO 3 -->
+            <div class="w-[86%] sm:w-[75%] md:w-auto shrink-0 md:shrink snap-center bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+              <div class="space-y-4">
+                <div class="flex text-amber-400 text-sm gap-1">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-700 text-sm leading-relaxed italic">
+                  "Fechamos entregas recorrentes para a nossa loja online e a satisfação dos nossos clientes aumentou demais. Respondem super rápido no WhatsApp e resolvem qualquer demanda com eficiência!"
+                </p>
+              </div>
+              <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-purpleDark text-white font-bold flex items-center justify-center text-sm">
+                  LS
+                </div>
+                <div>
+                  <h4 class="font-bold text-sm text-brand-dark">Larissa Silveira</h4>
+                  <p class="text-xs text-slate-500">Loja Virtual de Decoração</p>
+                </div>
+              </div>
+            </div>
+
           </div>
 
-          <!-- DEPOIMENTO 2 -->
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
-            <div class="space-y-4">
-              <div class="flex text-amber-400 text-sm gap-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Excelente atendimento! Super pontuais, mandam mensagem avisando quando estão a caminho e as mercadorias chegaram 100% perfeitas. Preço justo e muito profissionalismo da Glauce e Camilla."
-              </p>
-            </div>
-            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-gold text-brand-purpleDark font-bold flex items-center justify-center text-sm">
-                MC
-              </div>
-              <div>
-                <h4 class="font-bold text-sm text-brand-dark">Marcos Costa</h4>
-                <p class="text-xs text-slate-500">Comércio & Varejo (Centro/RJ)</p>
-              </div>
-            </div>
+          <!-- INDICADORES CARROSSEL MOBILE -->
+          <div class="flex md:hidden items-center justify-center gap-2 mt-4" id="carouselIndicators">
+            <button type="button" class="carousel-dot w-2.5 h-2.5 rounded-full bg-brand-purple transition-all duration-300" aria-label="Depoimento 1" onclick="scrollCarousel(0)"></button>
+            <button type="button" class="carousel-dot w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300" aria-label="Depoimento 2" onclick="scrollCarousel(1)"></button>
+            <button type="button" class="carousel-dot w-2.5 h-2.5 rounded-full bg-slate-300 transition-all duration-300" aria-label="Depoimento 3" onclick="scrollCarousel(2)"></button>
           </div>
 
-          <!-- DEPOIMENTO 3 -->
-          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
-            <div class="space-y-4">
-              <div class="flex text-amber-400 text-sm gap-1">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="text-slate-700 text-sm leading-relaxed italic">
-                "Fechamos entregas recorrentes para a nossa loja online e a satisfação dos nossos clientes aumentou demais. Respondem super rápido no WhatsApp e resolvem qualquer demanda com eficiência!"
-              </p>
-            </div>
-            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full bg-brand-purpleDark text-white font-bold flex items-center justify-center text-sm">
-                LS
-              </div>
-              <div>
-                <h4 class="font-bold text-sm text-brand-dark">Larissa Silveira</h4>
-                <p class="text-xs text-slate-500">Loja Virtual de Decoração</p>
-              </div>
-            </div>
+          <div class="flex md:hidden items-center justify-center gap-2 mt-2 text-[11px] text-slate-500 font-medium">
+            <i class="fa-solid fa-arrows-left-right text-brand-purple text-xs"></i>
+            <span>Arraste para o lado para ver mais</span>
           </div>
-
         </div>
 
       </div>
     </section>
 
-    <!-- ÁREA DE ATUAÇÃO / COBERTURA & MAPA (Foco em logística móvel, conforme instrução do usuário) -->
+    <!-- ÁREA DE ATUAÇÃO / COBERTURA (Foco em logística móvel & SEO Local Completo) -->
     <section id="cobertura" class="py-20 bg-slate-50 border-t border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -976,56 +1008,98 @@
             Atendemos Todo o Rio de Janeiro e Região Metropolitana
           </h2>
           <p class="text-slate-600 text-base sm:text-lg">
-            <strong>Nossa logística vai até você!</strong> Você não precisa se deslocar: coletamos na sua empresa, loja, horto ou residência e entregamos no destino desejado.
+            <strong>Nossa logística vai até você!</strong> Você não precisa se deslocar: coletamos diretamente no seu estabelecimento, horto, loja, centro de distribuição ou residência e entregamos no endereço de destino com rapidez e cuidado.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <!-- GRID COMPLETO DE BAIRROS E ZONAS (Otimização Máxima de SEO Local) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           
-          <!-- MAPA EMBUTIDO GOOGLE MAPS -->
-          <div class="lg:col-span-7 rounded-2xl overflow-hidden shadow-card border border-slate-200 bg-white p-2">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117600.0833118928!2d-43.36442655!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d1f0e431890!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
-              width="100%" 
-              height="380" 
-              style="border:0; border-radius: 12px;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"
-              title="Área de Atuação da LogMova Transportes no Rio de Janeiro">
-            </iframe>
+          <!-- ZONA OESTE & GUARATIBA (DESTAQUE HORTOS) -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-card hover:border-brand-purple/30 transition flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-dark text-lg">Zona Oeste & Guaratiba</h4>
+              <p class="text-xs font-semibold text-emerald-600 uppercase tracking-wide">Polo de Hortos e Cargas Sensíveis</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Barra da Tijuca, Recreio dos Bandeirantes, Guaratiba, Ilha de Guaratiba, Pedra de Guaratiba, Vargem Grande, Vargem Pequena, Barra Olímpica, Jacarepaguá, Taquara, Freguesia, Anil, Pechincha, Curicica, Camorim, Campo Grande, Santa Cruz, Bangu, Realengo, Padre Miguel e Sulacap.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] font-bold text-emerald-700 flex items-center gap-1.5">
+              <i class="fa-solid fa-leaf"></i> Coleta especializada em hortos
+            </div>
           </div>
 
-          <!-- LISTA DE REGIÕES E BAIRROS ATENDIDOS -->
-          <div class="lg:col-span-5 space-y-4">
-            
-            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
-                <i class="fa-solid fa-truck-arrow-right"></i> Zona Oeste & Guaratiba
-              </h4>
-              <p class="text-xs text-slate-600">Barra da Tijuca, Recreio dos Bandeirantes, Guaratiba, Campo Grande, Bangu, Jacarepaguá e Vargens.</p>
+          <!-- CENTRO & ZONA SUL -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-card hover:border-brand-purple/30 transition flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-xl">
+                <i class="fa-solid fa-building-columns"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-dark text-lg">Centro & Zona Sul</h4>
+              <p class="text-xs font-semibold text-brand-purple uppercase tracking-wide">Comércio, Escritórios e Residências</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Centro, Lapa, Cinelândia, Praça Mauá, Glória, Catete, Flamengo, Largo do Machado, Laranjeiras, Cosme Velho, Botafogo, Urca, Humaitá, Copacabana, Leme, Ipanema, Arpoador, Leblon, Gávea, Jardim Botânico, São Conrado e Santa Teresa.
+              </p>
             </div>
-
-            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
-                <i class="fa-solid fa-truck-arrow-right"></i> Centro & Zona Sul
-              </h4>
-              <p class="text-xs text-slate-600">Centro, Lapa, Botafogo, Copacabana, Ipanema, Leblon, Flamengo, Glória, Catete e Tijuca.</p>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] font-bold text-brand-purple flex items-center gap-1.5">
+              <i class="fa-solid fa-clock"></i> Entregas expressas e agendadas
             </div>
-
-            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
-                <i class="fa-solid fa-truck-arrow-right"></i> Zona Norte, Niterói & Baixada
-              </h4>
-              <p class="text-xs text-slate-600">Méier, Ilha do Governador, Madureira, Niterói, São Gonçalo, Duque de Caxias, Nova Iguaçu e Grande Rio.</p>
-            </div>
-
-            <div class="p-4 bg-brand-purpleSoft rounded-xl text-xs text-brand-purpleDark flex items-center gap-3">
-              <i class="fa-solid fa-circle-info text-base text-brand-purple shrink-0"></i>
-              <span>Não encontrou seu bairro acima? Consulte-nos pelo WhatsApp! Atendemos demandas especiais sob consulta.</span>
-            </div>
-
           </div>
+
+          <!-- ZONA NORTE & GRANDE TIJUCA -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-card hover:border-brand-purple/30 transition flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-xl">
+                <i class="fa-solid fa-city"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-dark text-lg">Zona Norte & Tijuca</h4>
+              <p class="text-xs font-semibold text-brand-purple uppercase tracking-wide">Lojas, E-commerce e Distribuição</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Tijuca, Maracanã, Vila Isabel, Grajaú, Andaraí, Praça da Bandeira, Méier, Cachambi, Todos os Santos, Engenho de Dentro, Del Castilho, Maria da Graça, Madureira, Cascadura, Penha, Olaria, Ramos, Bonsucesso, Ilha do Governador e Pavuna.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] font-bold text-brand-purple flex items-center gap-1.5">
+              <i class="fa-solid fa-boxes-packing"></i> Frete ágil com utilitário
+            </div>
+          </div>
+
+          <!-- NITERÓI, BAIXADA & GRANDE RIO -->
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-card hover:border-brand-purple/30 transition flex flex-col justify-between">
+            <div class="space-y-3">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl">
+                <i class="fa-solid fa-bridge-water"></i>
+              </div>
+              <h4 class="font-heading font-bold text-brand-dark text-lg">Niterói & Baixada</h4>
+              <p class="text-xs font-semibold text-amber-600 uppercase tracking-wide">Conexão Metropolitana</p>
+              <p class="text-xs text-slate-600 leading-relaxed">
+                Niterói (Centro, Icaraí, Santa Rosa, Ingá, São Francisco, Itaipu, Piratininga), São Gonçalo, Duque de Caxias, Nova Iguaçu, São João de Meriti, Nilópolis, Belford Roxo, Mesquita, Magé e Itaguaí.
+              </p>
+            </div>
+            <div class="pt-4 mt-4 border-t border-slate-100 text-[11px] font-bold text-brand-purple flex items-center gap-1.5">
+              <i class="fa-solid fa-route"></i> Rotas intermunicipais diárias
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BANNER DE CONSULTA DE BAIRRO -->
+        <div class="mt-8 p-6 bg-brand-purpleSoft rounded-2xl border border-brand-purple/20 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-brand-purple text-white flex items-center justify-center shrink-0">
+              <i class="fa-solid fa-location-crosshairs"></i>
+            </div>
+            <div>
+              <h5 class="font-bold text-brand-purpleDark text-sm">Não encontrou o seu bairro ou município na lista?</h5>
+              <p class="text-xs text-slate-600">Atendemos rotas especiais e fretes intermunicipais em todo o Estado do Rio sob consulta rápida.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20se%20a%20LogMova%20atende%20o%20meu%20bairro!" target="_blank" rel="noopener" class="shrink-0 bg-brand-purple hover:bg-brand-purpleDark text-white font-bold px-5 py-2.5 rounded-xl text-xs shadow-md transition flex items-center gap-2">
+            <i class="fa-brands fa-whatsapp text-emerald-400"></i> Consultar Meu Bairro
+          </a>
+        </div>
 
         </div>
 
@@ -1334,6 +1408,35 @@
         }
       });
     });
+
+    // Carrossel Mobile de Depoimentos
+    const track = document.getElementById('depoimentosTrack');
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    window.scrollCarousel = function(index) {
+      if (!track) return;
+      const card = track.children[index];
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      }
+    };
+
+    if (track && dots.length > 0) {
+      track.addEventListener('scroll', () => {
+        const scrollLeft = track.scrollLeft;
+        const cardWidth = track.firstElementChild ? track.firstElementChild.offsetWidth : track.offsetWidth;
+        const activeIndex = Math.min(dots.length - 1, Math.max(0, Math.round(scrollLeft / cardWidth)));
+        dots.forEach((dot, idx) => {
+          if (idx === activeIndex) {
+            dot.classList.remove('bg-slate-300', 'w-2.5');
+            dot.classList.add('bg-brand-purple', 'w-6');
+          } else {
+            dot.classList.remove('bg-brand-purple', 'w-6');
+            dot.classList.add('bg-slate-300', 'w-2.5');
+          }
+        });
+      }, { passive: true });
+    }
   </script>
 
 </body>
