@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LogMova Transportes | Fretes Urbanos, Cargas Sensíveis e Logística no RJ</title>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VTD0DTD80"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4VTD0DTD80');
+  </script>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="LogMova Transportes: Sua empresa vende, a LogMova entrega! Fretes urbanos, transporte de plantas e cargas sensíveis, e-commerce e coletas rápidas em todo o Rio de Janeiro e Grande Rio.">
+  <meta name="keywords" content="Logmova Transportes, fretes rj, frete rio de janeiro, transporte de plantas, frete fiorino rj, entregas guaratiba, logística urbana rio de janeiro, frete e-commerce rj, transporte cargas sensíveis">
+  <meta name="author" content="LogMova Transportes">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://dhaconsultoria.com.br/hotsites/log-mova/">
+  <meta property="og:title" content="LogMova Transportes | Fretes Urbanos e Logística no Rio de Janeiro">
+  <meta property="og:description" content="Sua empresa vende, a LogMova entrega! Fretes urbanos ágeis, entregas de plantas e cargas sensíveis em todo o Rio e Grande Rio.">
+  <meta property="og:image" content="https://diegoh86.github.io/log-mova/assets/img/og-image.png">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="LogMova Transportes">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              purple: '#481E71',       /* Roxo primário da logo */
+              purpleDark: '#331154',   /* Roxo escuro para contraste */
+              purpleLight: '#652B9E',  /* Roxo vibrante */
+              purpleSoft: '#F4EDFC',   /* Fundo lilás suave */
+              gold: '#F59E0B',         /* Amarelo ouro da logo */
+              goldHover: '#D97706',    /* Dourado escuro para hover */
+              goldLight: '#FEF3C7',    /* Dourado clarinho para badges */
+              dark: '#0F172A',         /* Ardósia escuro para texto */
+              muted: '#64748B'         /* Cinza neutro */
+            }
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            heading: ['Outfit', 'sans-serif'],
+          },
+          boxShadow: {
+            'glow-gold': '0 10px 25px -5px rgba(245, 158, 11, 0.4)',
+            'glow-purple': '0 10px 25px -5px rgba(72, 30, 113, 0.35)',
+            'card': '0 10px 30px -10px rgba(0, 0, 0, 0.08)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @keyframes pulse-subtle {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    .animate-pulse-subtle {
+      animation: pulse-subtle 2.5s infinite ease-in-out;
+    }
+    .badge-gradient {
+      background: linear-gradient(135deg, #481E71 0%, #652B9E 100%);
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- TOP BAR DE ANÚNCIO / CONTATO RÁPIDO -->
+  <div class="bg-brand-purpleDark text-white/90 text-xs py-2 px-4 border-b border-white/10">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Frota Operando Hoje em Todo o Rio & Grande Rio
+        </span>
+        <span class="hidden md:inline text-white/40">|</span>
+        <span class="hidden md:inline text-white/80">Especialistas em Hortos, Cargas Sensíveis e E-commerce</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20frete%20com%20a%20LogMova!" target="_blank" rel="noopener" class="hover:text-brand-gold transition flex items-center gap-1.5 font-semibold">
+          <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> (21) 98385-1651
+        </a>
+        <a href="https://www.instagram.com/logmovatransportes/" target="_blank" rel="noopener" class="hover:text-brand-gold transition text-white/80" aria-label="Instagram">
+          <i class="fa-brands fa-instagram text-sm"></i>
+        </a>
+        <a href="https://www.youtube.com/@logmovatransportes/shorts" target="_blank" rel="noopener" class="hover:text-brand-gold transition text-white/80" aria-label="YouTube">
+          <i class="fa-brands fa-youtube text-sm"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR PRINCIPAL -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 transition-all duration-300 shadow-sm" id="mainHeader">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- LOGOMARCA -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <img src="assets/img/logo.png" alt="LogMova Transportes" class="h-14 w-auto object-contain transition-transform group-hover:scale-105">
+        </a>
+
+        <!-- NAVEGAÇÃO DESKTOP -->
+        <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-slate-700">
+          <a href="#inicio" class="hover:text-brand-purple transition">Início</a>
+          <a href="#sobre" class="hover:text-brand-purple transition">Sobre Nós</a>
+          <a href="#servicos" class="hover:text-brand-purple transition">Serviços</a>
+          <a href="#cargas-sensiveis" class="hover:text-brand-purple transition flex items-center gap-1.5">
+            <i class="fa-solid fa-seedling text-emerald-600"></i> Cargas Sensíveis & Hortos
+          </a>
+          <a href="#como-funciona" class="hover:text-brand-purple transition">Como Funciona</a>
+          <a href="#depoimentos" class="hover:text-brand-purple transition">Depoimentos</a>
+          <a href="#cobertura" class="hover:text-brand-purple transition">Área de Atuação</a>
+        </nav>
+
+        <!-- CTA BOTÃO WHATSAPP -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." 
+             target="_blank" 
+             rel="noopener"
+             class="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-bold px-5 py-2.5 rounded-full text-sm shadow-glow-gold transition-all duration-200 transform hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-lg text-brand-purpleDark"></i>
+            <span>Pedir Orçamento</span>
+          </a>
+        </div>
+
+        <!-- BOTÃO MOBILE TOGGLE -->
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2 rounded-lg text-slate-700 hover:text-brand-purple hover:bg-slate-100 focus:outline-none" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars text-2xl" id="menuIcon"></i>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- MOBILE MENU DRAWER -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-3">
+      <a href="#inicio" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Início</a>
+      <a href="#sobre" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Sobre Nós</a>
+      <a href="#servicos" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Serviços</a>
+      <a href="#cargas-sensiveis" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple flex items-center gap-2">
+        <i class="fa-solid fa-seedling text-emerald-600"></i> Cargas Sensíveis & Hortos
+      </a>
+      <a href="#como-funciona" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Como Funciona</a>
+      <a href="#depoimentos" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Depoimentos</a>
+      <a href="#cobertura" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-800 hover:bg-brand-purpleSoft hover:text-brand-purple">Área de Atuação</a>
+      <div class="pt-3">
+        <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento%20de%20frete." 
+           target="_blank" 
+           rel="noopener"
+           class="w-full flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-bold px-5 py-3 rounded-xl text-center shadow-md">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION (Inspirada nas melhores práticas de TransHub & Logistik) -->
+    <section id="inicio" class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28 bg-gradient-to-b from-brand-purpleSoft/40 via-white to-slate-50">
+      
+      <!-- Detalhes de Fundo Abstratos -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-brand-purple/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute top-1/2 -left-24 w-80 h-80 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- COLUNA ESQUERDA: TEXTO & CONVERSÃO -->
+          <div class="lg:col-span-7 space-y-6">
+            
+            <!-- BADGE SUPERIOR -->
+            <div class="inline-flex items-center gap-2 bg-white px-4 py-1.5 rounded-full border border-purple-100 shadow-sm">
+              <span class="flex h-2.5 w-2.5 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-gold"></span>
+              </span>
+              <span class="text-xs sm:text-sm font-semibold text-brand-purpleDark">Logística Urbana de Confiança no Rio de Janeiro</span>
+            </div>
+
+            <!-- TÍTULO H1 PRINCIPAL -->
+            <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brand-dark tracking-tight leading-[1.15]">
+              Sua empresa vende. <br class="hidden sm:inline">
+              A <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-purple via-brand-purpleLight to-brand-gold">LOGMOVA</span> entrega!
+            </h1>
+
+            <!-- PARÁGRAFO DE APOIO -->
+            <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl">
+              Fretes urbanos ágeis, entregas recorrentes e especialistas no transporte de <strong>cargas sensíveis, hortos, floriculturas e e-commerce</strong>. Do pequeno frete ao maior volume com cuidado real e compromisso.
+            </p>
+
+            <!-- BULLETS DE CONFIANÇA -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-700 font-medium">
+              <div class="flex items-center gap-2.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Coletas e entregas em todo o RJ</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Especialistas em plantas e hortos</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Fretes avulsos e contratos fixos</span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <div class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs">
+                  <i class="fa-solid fa-check"></i>
+                </div>
+                <span>Operado com liderança feminina</span>
+              </div>
+            </div>
+
+            <!-- BOTÕES DE AÇÃO HERO -->
+            <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Preciso%20de%20um%20or%C3%A7amento%20de%20frete%20com%20a%20LogMova.%20Poderia%20me%20ajudar%3F" 
+                 target="_blank" 
+                 rel="noopener"
+                 class="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-extrabold px-8 py-4 rounded-xl text-base shadow-glow-gold transition-all duration-200 transform hover:-translate-y-1">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Cotação Imediata no WhatsApp</span>
+              </a>
+
+              <a href="#calculadora" 
+                 class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-brand-purple border-2 border-brand-purple/20 font-bold px-6 py-4 rounded-xl text-base transition-all duration-200">
+                <i class="fa-solid fa-calculator text-brand-purple"></i>
+                <span>Simular Meu Frete</span>
+              </a>
+            </div>
+
+            <!-- NOTA DE ATENDIMENTO -->
+            <p class="text-xs text-slate-500 flex items-center gap-2">
+              <i class="fa-solid fa-bolt text-brand-gold"></i>
+              <span>Resposta média em até 10 minutos pelo WhatsApp comercial.</span>
+            </p>
+
+          </div>
+
+          <!-- COLUNA DIREITA: CARD VISUAL REAL COM IMAGENS -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              
+              <!-- Moldura Principal com Foto Real -->
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-900 group">
+                <img src="assets/img/insta-1.jpg" alt="LogMova Transportes em Operação no Rio de Janeiro" class="w-full h-[440px] object-cover transition-transform duration-500 group-hover:scale-105">
+                
+                <!-- Gradiente de sobreposição -->
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-purpleDark/90 via-brand-purpleDark/20 to-transparent"></div>
+                
+                <!-- Informações na base da imagem -->
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <div class="inline-flex items-center gap-2 bg-brand-gold text-brand-purpleDark text-xs font-bold px-3 py-1 rounded-full mb-2">
+                    <i class="fa-solid fa-shield-halved"></i> Cuidado & Pontualidade
+                  </div>
+                  <h3 class="font-heading font-bold text-xl">Logística com Cuidado Humano</h3>
+                  <p class="text-white/80 text-xs mt-1">Cuidamos da sua mercadoria como se fosse nossa: embalada, travada e entregue em perfeitas condições.</p>
+                </div>
+              </div>
+
+              <!-- CARD FLUTUANTE 1: VEÍCULOS & AGILIDADE -->
+              <div class="absolute -top-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 hidden sm:flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-medium">Frota Adaptada</div>
+                  <div class="font-bold text-sm text-brand-dark">Fiorino & Utilitários</div>
+                </div>
+              </div>
+
+              <!-- CARD FLUTUANTE 2: CARGAS SENSÍVEIS -->
+              <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
+                  <i class="fa-solid fa-leaf"></i>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-500 font-medium">Hortos & Viveiros</div>
+                  <div class="font-bold text-sm text-brand-dark">Plantas Chegam Intactas 🌱</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NÚMEROS & ESTATÍSTICAS (Inspirado no Logistik Template) -->
+    <section class="bg-brand-purple text-white py-10 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          
+          <div class="space-y-1">
+            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">+3.000</div>
+            <div class="text-xs sm:text-sm text-white/80 font-medium">Entregas Realizadas</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">100%</div>
+            <div class="text-xs sm:text-sm text-white/80 font-medium">Cargas Monitoradas</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">5.0 ★</div>
+            <div class="text-xs sm:text-sm text-white/80 font-medium">Avaliações Positivas</div>
+          </div>
+
+          <div class="space-y-1">
+            <div class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-gold">RJ & RMR</div>
+            <div class="text-xs sm:text-sm text-white/80 font-medium">Cobertura Metropolitana</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE NÓS (História Real da Glauce e Camilla) -->
+    <section id="sobre" class="py-20 lg:py-28 bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- FOTOS DA EQUIPE REAL -->
+          <div class="lg:col-span-5 order-2 lg:order-1 space-y-4">
+            <div class="relative">
+              <div class="rounded-3xl overflow-hidden shadow-card border-4 border-brand-purpleSoft">
+                <img src="assets/img/insta-dupla.jpg" alt="Equipe LogMova - Glauce e Camilla" class="w-full h-80 object-cover">
+              </div>
+              <div class="absolute -bottom-4 right-4 bg-brand-purpleDark text-white p-3 rounded-2xl shadow-lg text-xs font-bold flex items-center gap-2">
+                <i class="fa-solid fa-heart text-rose-400"></i>
+                <span>Mulheres na Logística</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="rounded-2xl overflow-hidden shadow-sm h-40">
+                <img src="assets/img/insta-equipe.jpg" alt="Fiorino LogMova" class="w-full h-full object-cover">
+              </div>
+              <div class="rounded-2xl overflow-hidden shadow-sm h-40">
+                <img src="assets/img/insta-hortos.jpg" alt="Transporte de Mudas e Plantas" class="w-full h-full object-cover">
+              </div>
+            </div>
+          </div>
+
+          <!-- TEXTO INSTITUCIONAL -->
+          <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-brand-purpleSoft text-brand-purple font-semibold text-xs px-3.5 py-1.5 rounded-full">
+              <i class="fa-solid fa-users"></i> Quem Somos
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+              Uma logística feita por quem realmente se importa com a sua entrega
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed text-base sm:text-lg">
+              A <strong>LOGMOVA Transportes</strong> nasceu da vontade de oferecer um serviço de frete e logística urbana diferenciado no Rio de Janeiro: com respeito absoluto ao tempo dos nossos clientes, comunicação transparente e muito cuidado no manuseio de cada item.
+            </p>
+
+            <blockquote class="p-4 bg-brand-purpleSoft/60 border-l-4 border-brand-purple rounded-r-2xl text-slate-700 italic text-sm sm:text-base">
+              "Sabemos que cada entrega representa o esforço de quem produz e a expectativa ansiosa de quem recebe. Tratamos cada carga com respeito aos detalhes: <strong>planta não é só carga, é vida</strong>. Mercadoria não é só caixa, é a confiança da sua empresa."
+            </blockquote>
+
+            <!-- PILARES DA LOGMOVA -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <div class="text-brand-purple font-bold text-base flex items-center gap-2 mb-1">
+                  <i class="fa-solid fa-shield-cat"></i> Cuidado Extremo
+                </div>
+                <p class="text-xs text-slate-500">Acomodação planejada para evitar quebras, amassados ou danos térmicos.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <div class="text-brand-purple font-bold text-base flex items-center gap-2 mb-1">
+                  <i class="fa-solid fa-clock"></i> Pontualidade Rigorosa
+                </div>
+                <p class="text-xs text-slate-500">Horários de coleta e prazos de entrega combinados cumpridos à risca.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <div class="text-brand-purple font-bold text-base flex items-center gap-2 mb-1">
+                  <i class="fa-solid fa-comments"></i> Comunicação Direta
+                </div>
+                <p class="text-xs text-slate-500">Atualizações de status em tempo real com o motorista pelo WhatsApp.</p>
+              </div>
+
+              <div class="p-4 rounded-xl bg-slate-50 border border-slate-100">
+                <div class="text-brand-purple font-bold text-base flex items-center gap-2 mb-1">
+                  <i class="fa-solid fa-handshake"></i> Parcerias B2B Sólidas
+                </div>
+                <p class="text-xs text-slate-500">Condições especiais e rotas programadas para clientes recorrentes.</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20uma%20parceria%20de%20fretes%20com%20a%20LogMova!" 
+                 target="_blank" 
+                 rel="noopener"
+                 class="inline-flex items-center gap-2 text-brand-purple font-bold hover:text-brand-purpleLight text-sm group">
+                <span>Falar diretamente com a nossa equipe no WhatsApp</span>
+                <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO DE SERVIÇOS (Inspirada no TransHub e Tranzit) -->
+    <section id="servicos" class="py-20 bg-slate-50 border-y border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 bg-brand-goldLight text-brand-goldHover font-bold text-xs px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-boxes-stacked"></i> Nossas Soluções
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            Serviços de transporte sob medida para a sua necessidade
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Da entrega expressa avulsa a contratos corporativos contínuos, atendemos pessoas físicas, pequenas e grandes empresas em todo o Grande Rio.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- CARD 1: FRETES URBANOS RÁPIDOS -->
+          <div class="bg-white rounded-2xl p-8 shadow-card border border-slate-100 hover:border-brand-purple/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-2xl group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-truck-ramp-box"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Fretes Urbanos & Coletas Rápidas</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Transporte ágil de caixas, encomendas, mercadorias, equipamentos e volumes médios entre bairros e municípios da região metropolitana do RJ.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Coleta no mesmo dia (Same Day)</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Cargas seguras e bem acomodadas</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Veículo utilitário (Fiorino)</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20preciso%20de%20um%20frete%20urbano%20no%20RJ!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-brand-purple hover:text-brand-gold transition">
+                <span>Cotar Frete Urbano</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 2: CARGAS SENSÍVEIS & HORTOS -->
+          <div class="bg-gradient-to-b from-white to-emerald-50/40 rounded-2xl p-8 shadow-card border-2 border-emerald-500/20 hover:border-emerald-500 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between relative group">
+            <div class="absolute -top-3.5 right-6 bg-emerald-600 text-white text-[11px] font-extrabold uppercase tracking-wider px-3 py-1 rounded-full shadow-sm">
+              Especialidade
+            </div>
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Transporte de Plantas & Hortos</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Logística com manuseio delicado para hortos, floriculturas, viveiros de Guaratiba e paisagistas. Mudas, vasos, gramas e arranjos preservados.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Sem amassar folhas e flores</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Proteção contra sol e vento excessivo</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Referência em Guaratiba e RJ</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20preciso%20de%20transporte%20de%20plantas%2Fhorto%20com%20a%20LogMova!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-emerald-700 hover:text-emerald-800 transition">
+                <span>Cotar Carga Sensível</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 3: E-COMMERCE & LOJAS -->
+          <div class="bg-white rounded-2xl p-8 shadow-card border border-slate-100 hover:border-brand-purple/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-2xl group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Logística para E-commerce & Lojas</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Retiramos no seu centro de distribuição ou loja e entregamos com máxima agilidade nas mãos do seu cliente, aumentando a sua taxa de recompra.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Comprovante de entrega assinado</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Entregas agendadas e pontuais</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Atendimento personalizado ao consumidor</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20tenho%20uma%20loja%2Fecommerce%20e%20gostaria%20de%20or%C3%A7amento!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-brand-purple hover:text-brand-gold transition">
+                <span>Atender Meu E-commerce</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 4: CONTRATOS FIXOS & ROTAS PROGRAMADAS -->
+          <div class="bg-white rounded-2xl p-8 shadow-card border border-slate-100 hover:border-brand-purple/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-2xl group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-calendar-check"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Contratos Fixos & Rotas Diárias</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Tenha um veículo dedicado ou rotas semanais pré-agendadas para a sua empresa sem o custo fixo e a dor de cabeça de gerenciar frota própria.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Tabela diferenciada para parceiros</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Disponibilidade de horário reservada</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Faturamento B2B simplificado</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20contratos%20fixos%20e%20rotas%20programadas!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-brand-purple hover:text-brand-gold transition">
+                <span>Consultar Contrato Fixo</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 5: ITENS FRÁGEIS & DECORAÇÃO -->
+          <div class="bg-white rounded-2xl p-8 shadow-card border border-slate-100 hover:border-brand-purple/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-2xl group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-wine-glass"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Artigos de Decoração & Itens Frágeis</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Peças de cerâmica, vidros, luminárias, mobiliário leve e itens artesanais transportados com proteção reforçada e travas de estabilidade.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Fixação segura no compartimento</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Condução suave e defensiva</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Descarregamento cuidadoso</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20tenho%20uma%20carga%20fr%C3%A1gil%20ou%20decora%C3%A7%C3%A3o%20para%20transportar!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-brand-purple hover:text-brand-gold transition">
+                <span>Cotar Carga Frágil</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- CARD 6: SUPORTE A EVENTOS & PRODUÇÃO -->
+          <div class="bg-white rounded-2xl p-8 shadow-card border border-slate-100 hover:border-brand-purple/30 transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+            <div class="space-y-4">
+              <div class="w-14 h-14 rounded-2xl bg-brand-purpleSoft text-brand-purple flex items-center justify-center text-2xl group-hover:bg-brand-purple group-hover:text-white transition-colors duration-300">
+                <i class="fa-solid fa-champagne-glasses"></i>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-brand-dark">Eventos, Cenografia & Stands</h3>
+              <p class="text-slate-600 text-sm leading-relaxed">
+                Transporte e apoio para montagem de festas, congressos, feiras e cenários no Rio de Janeiro. Entrega e recolhimento com pontualidade estrita.
+              </p>
+              <ul class="text-xs text-slate-500 space-y-2 pt-2">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Cumprimento de janelas de carga e descarga</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Apoio nos principais pavilhões do RJ</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Disponibilidade noturna sob consulta</li>
+              </ul>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-100">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20preciso%20de%20apoio%20log%C3%ADstico%20para%20um%20evento!" target="_blank" rel="noopener" class="w-full inline-flex items-center justify-center gap-2 text-sm font-bold text-brand-purple hover:text-brand-gold transition">
+                <span>Cotar Logística de Evento</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEÇÃO DESTAQUE CARGAS SENSÍVEIS & HORTOS -->
+    <section id="cargas-sensiveis" class="py-20 bg-brand-purpleDark text-white relative overflow-hidden">
+      
+      <!-- Detalhe decorativo de fundo -->
+      <div class="absolute -right-20 top-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-bold text-xs px-3.5 py-1.5 rounded-full">
+              <i class="fa-solid fa-leaf"></i> Especialidade LogMova
+            </div>
+
+            <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+              Comprou plantas? <br>
+              A <span class="text-brand-gold">LOGMOVA</span> leva com todo o carinho!
+            </h2>
+
+            <p class="text-white/80 text-base sm:text-lg leading-relaxed">
+              Transportar plantas exige técnica e sensibilidade. Somos a transportadora parceira oficial de quem cultiva e decora com plantas em Guaratiba, Barra da Tijuca, Recreio, Zona Sul e Grande Rio.
+            </p>
+
+            <div class="space-y-4 pt-2">
+              
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-shield-heart text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Manuseio Delicado & Travamento Individual</h4>
+                  <p class="text-white/70 text-xs sm:text-sm">Vasos e mudas são posicionados com firmeza para não tombarem em curvas, freadas ou aclives.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-sun text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Proteção Térmica e Sem Vento Direto</h4>
+                  <p class="text-white/70 text-xs sm:text-sm">Veículo fechado e arejado na medida certa, protegendo as folhagens da queima do vento quente carioca.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-truck-ramp-box text-sm"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-base">Coleta Direta nos Hortos e Viveiros</h4>
+                  <p class="text-white/70 text-xs sm:text-sm">Vamos até os viveiros e floriculturas de Guaratiba ou qualquer região e entregamos no endereço final.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="pt-4">
+              <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20comprei%20plantas%20ou%20tenho%20um%20horto%20e%20quero%20um%20or%C3%A7amento%20de%20transporte!" 
+                 target="_blank" 
+                 rel="noopener"
+                 class="inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-extrabold px-8 py-4 rounded-xl text-base shadow-glow-gold transition-all duration-200">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Agendar Entrega de Plantas</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- IMAGEM DA OPERAÇÃO DE PLANTAS -->
+          <div class="lg:col-span-6">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+              <img src="assets/img/insta-plantas.jpg" alt="LogMova entregando plantas no Rio de Janeiro" class="w-full h-[460px] object-cover">
+              
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <span class="bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full">Guaratiba • Rio de Janeiro</span>
+                <p class="text-sm font-medium mt-2">"Planta não é só carga. É vida cultivada com amor."</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SIMULADOR INTERATIVO / CALCULADORA DE FRETE (Elemento de Conversão de Alto Impacto) -->
+    <section id="calculadora" class="py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="bg-gradient-to-br from-brand-purpleSoft/80 via-white to-slate-50 rounded-3xl p-6 sm:p-10 border-2 border-brand-purple/20 shadow-xl">
+          
+          <div class="text-center space-y-3 mb-8">
+            <span class="inline-flex items-center gap-1.5 bg-brand-goldLight text-brand-goldHover text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">
+              <i class="fa-solid fa-calculator"></i> Orçamento Instantâneo
+            </span>
+            <h3 class="font-heading text-2xl sm:text-3xl font-extrabold text-brand-dark">
+              Simule sua Cotação em 1 Minuto
+            </h3>
+            <p class="text-slate-600 text-sm max-w-xl mx-auto">
+              Selecione o tipo de carga e os bairros envolvidos para abrir uma mensagem pré-preenchida no nosso WhatsApp oficial!
+            </p>
+          </div>
+
+          <form id="freteForm" class="space-y-6">
+            
+            <!-- TIPO DE SERVIÇO / CARGA -->
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-2">
+                1. O que você precisa transportar?
+              </label>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3" id="serviceTypeGrid">
+                
+                <button type="button" data-val="Plantas e Mudas (Horto)" class="service-opt-btn active p-3 rounded-xl border-2 border-brand-purple bg-brand-purpleSoft text-brand-purple text-xs font-bold text-center transition flex flex-col items-center gap-2">
+                  <i class="fa-solid fa-seedling text-lg"></i>
+                  <span>Plantas / Hortos</span>
+                </button>
+
+                <button type="button" data-val="Mercadorias e Caixas" class="service-opt-btn p-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 hover:border-brand-purple/40 text-xs font-bold text-center transition flex flex-col items-center gap-2">
+                  <i class="fa-solid fa-boxes-stacked text-lg"></i>
+                  <span>Mercadorias / Caixas</span>
+                </button>
+
+                <button type="button" data-val="E-commerce ou Loja" class="service-opt-btn p-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 hover:border-brand-purple/40 text-xs font-bold text-center transition flex flex-col items-center gap-2">
+                  <i class="fa-solid fa-bag-shopping text-lg"></i>
+                  <span>E-commerce / Lojas</span>
+                </button>
+
+                <button type="button" data-val="Carga Frágil ou Outro" class="service-opt-btn p-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 hover:border-brand-purple/40 text-xs font-bold text-center transition flex flex-col items-center gap-2">
+                  <i class="fa-solid fa-truck-moving text-lg"></i>
+                  <span>Carga Frágil / Outros</span>
+                </button>
+
+              </div>
+              <input type="hidden" id="selectedService" value="Plantas e Mudas (Horto)">
+            </div>
+
+            <!-- ORIGEM E DESTINO -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="origemBairro" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  2. Bairro / Região de Coleta
+                </label>
+                <div class="relative">
+                  <i class="fa-solid fa-location-dot absolute left-3.5 top-3.5 text-brand-purple text-sm"></i>
+                  <input type="text" id="origemBairro" placeholder="Ex: Guaratiba, Barra, Centro..." required 
+                         class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple focus:border-transparent bg-white">
+                </div>
+              </div>
+
+              <div>
+                <label for="destinoBairro" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  3. Bairro / Região de Entrega
+                </label>
+                <div class="relative">
+                  <i class="fa-solid fa-flag-checkered absolute left-3.5 top-3.5 text-emerald-600 text-sm"></i>
+                  <input type="text" id="destinoBairro" placeholder="Ex: Copacabana, Tijuca, Niterói..." required 
+                         class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple focus:border-transparent bg-white">
+                </div>
+              </div>
+            </div>
+
+            <!-- DETALHES COMPLEMENTARES -->
+            <div>
+              <label for="observacoesCarga" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                4. Detalhes da Carga (Opcional)
+              </label>
+              <input type="text" id="observacoesCarga" placeholder="Ex: 10 vasos médios, caixas com taças, peso estimado..." 
+                     class="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-brand-purple focus:border-transparent bg-white">
+            </div>
+
+            <!-- BOTÃO DE ENVIO DIRETO PRO WHATSAPP -->
+            <div>
+              <button type="submit" class="w-full bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-extrabold py-4 px-6 rounded-xl shadow-glow-gold transition-all duration-200 flex items-center justify-center gap-3 text-base">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>Gerar Cotação e Enviar pelo WhatsApp</span>
+              </button>
+              <p class="text-center text-[11px] text-slate-500 mt-2">Você será redirecionado para o WhatsApp oficial com a mensagem pronta!</p>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMO FUNCIONA (FLUXO EM 3 PASSOS - Inspirado no Tranzit) -->
+    <section id="como-funciona" class="py-20 bg-slate-50 border-t border-slate-200/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 bg-brand-purpleSoft text-brand-purple font-bold text-xs px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-list-check"></i> Passo a Passo
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            Como funciona contratar a LogMova?
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            Sem burocracia, contratos engessados ou perda de tempo. Veja como é simples:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          
+          <!-- PASSO 1 -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm relative text-center space-y-4">
+            <div class="w-16 h-16 rounded-2xl bg-brand-purple text-white flex items-center justify-center text-2xl font-extrabold mx-auto shadow-glow-purple">
+              1
+            </div>
+            <h3 class="font-heading text-xl font-bold text-brand-dark">Envie sua Solicitação</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Mande uma mensagem no WhatsApp com o bairro de coleta, bairro de entrega e uma foto ou descrição do volume da carga.
+            </p>
+          </div>
+
+          <!-- PASSO 2 -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm relative text-center space-y-4">
+            <div class="w-16 h-16 rounded-2xl bg-brand-gold text-brand-purpleDark flex items-center justify-center text-2xl font-extrabold mx-auto shadow-glow-gold">
+              2
+            </div>
+            <h3 class="font-heading text-xl font-bold text-brand-dark">Receba a Cotação Rápida</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Passamos o valor claro, sem pegadinhas nem taxas ocultas, e combinamos o melhor horário para a retirada.
+            </p>
+          </div>
+
+          <!-- PASSO 3 -->
+          <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm relative text-center space-y-4">
+            <div class="w-16 h-16 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl font-extrabold mx-auto shadow-lg">
+              3
+            </div>
+            <h3 class="font-heading text-xl font-bold text-brand-dark">Coleta e Entrega Segura</h3>
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Nossa equipe vai até o local, acomoda os itens com total proteção e entrega no destino final com confirmação imediata.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20quero%20solicitar%20uma%20coleta%20com%20a%20LogMova!" 
+             target="_blank" 
+             rel="noopener"
+             class="inline-flex items-center gap-2 bg-brand-purple hover:bg-brand-purpleDark text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition">
+            <i class="fa-brands fa-whatsapp text-xl text-emerald-400"></i>
+            <span>Solicitar Minha Coleta Agora</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- DEPOIMENTOS DE CLIENTES (Avaliações Positivas Reais) -->
+    <section id="depoimentos" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div class="inline-flex items-center gap-2 bg-brand-goldLight text-brand-goldHover font-bold text-xs px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-star"></i> Avaliações Reais
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            O que nossos clientes dizem sobre a LogMova
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            A confiança de quem já experimentou uma logística com atenção de verdade aos detalhes.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- DEPOIMENTO 1 -->
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Trabalhamos com horto em Guaratiba e encontrar alguém que saiba transportar plantas com cuidado é raridade. A equipe da LogMova é impecável: as folhagens chegam intactas aos nossos clientes na Barra e Zona Sul!"
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-purple text-white font-bold flex items-center justify-center text-sm">
+                RH
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-brand-dark">Renata H.</h4>
+                <p class="text-xs text-slate-500">Horto & Paisagismo (Guaratiba/RJ)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPOIMENTO 2 -->
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Excelente atendimento! Super pontuais, mandam mensagem avisando quando estão a caminho e as mercadorias chegaram 100% perfeitas. Preço justo e muito profissionalismo da Glauce e Camilla."
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-gold text-brand-purpleDark font-bold flex items-center justify-center text-sm">
+                MC
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-brand-dark">Marcos Costa</h4>
+                <p class="text-xs text-slate-500">Comércio & Varejo (Centro/RJ)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- DEPOIMENTO 3 -->
+          <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 flex flex-col justify-between hover:shadow-card transition duration-300">
+            <div class="space-y-4">
+              <div class="flex text-amber-400 text-sm gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic">
+                "Fechamos entregas recorrentes para a nossa loja online e a satisfação dos nossos clientes aumentou demais. Respondem super rápido no WhatsApp e resolvem qualquer demanda com eficiência!"
+              </p>
+            </div>
+            <div class="pt-6 mt-6 border-t border-slate-200/60 flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-brand-purpleDark text-white font-bold flex items-center justify-center text-sm">
+                LS
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-brand-dark">Larissa Silveira</h4>
+                <p class="text-xs text-slate-500">Loja Virtual de Decoração</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ÁREA DE ATUAÇÃO / COBERTURA & MAPA (Foco em logística móvel, conforme instrução do usuário) -->
+    <section id="cobertura" class="py-20 bg-slate-50 border-t border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
+          <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 font-bold text-xs px-3.5 py-1.5 rounded-full">
+            <i class="fa-solid fa-map-location-dot"></i> Cobertura Metropolitana
+          </div>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark tracking-tight">
+            Atendemos Todo o Rio de Janeiro e Região Metropolitana
+          </h2>
+          <p class="text-slate-600 text-base sm:text-lg">
+            <strong>Nossa logística vai até você!</strong> Você não precisa se deslocar: coletamos na sua empresa, loja, horto ou residência e entregamos no destino desejado.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- MAPA EMBUTIDO GOOGLE MAPS -->
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden shadow-card border border-slate-200 bg-white p-2">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117600.0833118928!2d-43.36442655!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f58a6a00a9d%3A0x3f251d1f0e431890!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="380" 
+              style="border:0; border-radius: 12px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Área de Atuação da LogMova Transportes no Rio de Janeiro">
+            </iframe>
+          </div>
+
+          <!-- LISTA DE REGIÕES E BAIRROS ATENDIDOS -->
+          <div class="lg:col-span-5 space-y-4">
+            
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
+                <i class="fa-solid fa-truck-arrow-right"></i> Zona Oeste & Guaratiba
+              </h4>
+              <p class="text-xs text-slate-600">Barra da Tijuca, Recreio dos Bandeirantes, Guaratiba, Campo Grande, Bangu, Jacarepaguá e Vargens.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
+                <i class="fa-solid fa-truck-arrow-right"></i> Centro & Zona Sul
+              </h4>
+              <p class="text-xs text-slate-600">Centro, Lapa, Botafogo, Copacabana, Ipanema, Leblon, Flamengo, Glória, Catete e Tijuca.</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm space-y-2">
+              <h4 class="font-bold text-brand-purple text-base flex items-center gap-2">
+                <i class="fa-solid fa-truck-arrow-right"></i> Zona Norte, Niterói & Baixada
+              </h4>
+              <p class="text-xs text-slate-600">Méier, Ilha do Governador, Madureira, Niterói, São Gonçalo, Duque de Caxias, Nova Iguaçu e Grande Rio.</p>
+            </div>
+
+            <div class="p-4 bg-brand-purpleSoft rounded-xl text-xs text-brand-purpleDark flex items-center gap-3">
+              <i class="fa-solid fa-circle-info text-base text-brand-purple shrink-0"></i>
+              <span>Não encontrou seu bairro acima? Consulte-nos pelo WhatsApp! Atendemos demandas especiais sob consulta.</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES (FAQ ACCORDION) -->
+    <section class="py-20 bg-white border-t border-slate-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center space-y-3 mb-14">
+          <span class="inline-flex items-center gap-1.5 bg-brand-purpleSoft text-brand-purple text-xs font-bold px-3 py-1 rounded-full">
+            <i class="fa-solid fa-circle-question"></i> Dúvidas Comuns
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-brand-dark">
+            Perguntas Frequentes
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            Tire suas principais dúvidas sobre como trabalhamos.
+          </p>
+        </div>
+
+        <div class="space-y-4" id="faqAccordion">
+          
+          <!-- ITEM 1 -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden transition">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left font-bold text-brand-dark flex justify-between items-center gap-4 bg-slate-50 hover:bg-slate-100 transition">
+              <span>Como faço para solicitar um orçamento de frete?</span>
+              <i class="fa-solid fa-chevron-down text-brand-purple transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm bg-white border-t border-slate-100 leading-relaxed">
+              Basta nos chamar no WhatsApp pelo número <strong>(21) 98385-1651</strong> ou usar o formulário interativo desta página, informando o bairro de coleta, bairro de entrega e uma foto ou descrição do material. Respondemos de forma ágil com o valor fechado.
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden transition">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left font-bold text-brand-dark flex justify-between items-center gap-4 bg-slate-50 hover:bg-slate-100 transition">
+              <span>Qual é o tipo de veículo utilizado nos fretes?</span>
+              <i class="fa-solid fa-chevron-down text-brand-purple transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm bg-white border-t border-slate-100 leading-relaxed">
+              Operamos com veículos utilitários ágeis (como Fiorino), ideais para o trânsito urbano do Rio de Janeiro, garantindo rapidez no deslocamento, compartimento fechado para proteção contra intempéries e capacidade para volumes de pequeno a médio porte.
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden transition">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left font-bold text-brand-dark flex justify-between items-center gap-4 bg-slate-50 hover:bg-slate-100 transition">
+              <span>Vocês realizam entregas recorrentes ou contratos fixos para empresas?</span>
+              <i class="fa-solid fa-chevron-down text-brand-purple transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm bg-white border-t border-slate-100 leading-relaxed">
+              Sim! Atendemos hortos, viveiros, floriculturas, lojas físicas e e-commerces que precisam de coletas diárias, semanais ou rotas programadas, com valores diferenciados e faturamento mensal facilitado.
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden transition">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left font-bold text-brand-dark flex justify-between items-center gap-4 bg-slate-50 hover:bg-slate-100 transition">
+              <span>Quais são os cuidados específicos com o transporte de plantas?</span>
+              <i class="fa-solid fa-chevron-down text-brand-purple transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm bg-white border-t border-slate-100 leading-relaxed">
+              As plantas são amarradas e estabilizadas para não tombarem, protegidas do sol escaldante e de correntes de ar excessivas no compartimento fechado. Cuidamos das mudas e folhagens como se fossem nossas, garantindo que cheguem viçosas ao destino.
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="border border-slate-200 rounded-2xl overflow-hidden transition">
+            <button type="button" class="faq-toggle w-full px-6 py-4 text-left font-bold text-brand-dark flex justify-between items-center gap-4 bg-slate-50 hover:bg-slate-100 transition">
+              <span>Preciso ir até a sede da empresa para fechar o serviço?</span>
+              <i class="fa-solid fa-chevron-down text-brand-purple transition-transform duration-300"></i>
+            </button>
+            <div class="faq-content hidden px-6 py-4 text-slate-600 text-sm bg-white border-t border-slate-100 leading-relaxed">
+              Não! A LogMova é uma empresa de transporte 100% voltada ao atendimento externo. Todo o agendamento é feito de forma prática pelo WhatsApp e o veículo vai diretamente ao endereço de coleta informado por você.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER FINAL CTA DE ALTA CONVERSÃO -->
+    <section class="py-16 bg-gradient-to-r from-brand-purpleDark via-brand-purple to-brand-purpleDark text-white relative overflow-hidden">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+        
+        <span class="inline-flex items-center gap-2 bg-brand-gold text-brand-purpleDark text-xs font-extrabold px-4 py-1.5 rounded-full uppercase tracking-wider">
+          <i class="fa-solid fa-bolt"></i> Cotação Sem Compromisso
+        </span>
+
+        <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">
+          Pronto para despachar sua carga com total segurança?
+        </h2>
+
+        <p class="text-white/80 text-base sm:text-lg max-w-2xl mx-auto">
+          Fale agora mesmo com a nossa equipe no WhatsApp, informe a sua demanda e feche seu frete com quem é referência de pontualidade e cuidado no Rio de Janeiro.
+        </p>
+
+        <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="https://wa.me/5521983851651?text=Ol%C3%A1%2C%20gostaria%20de%20fechar%20um%20frete%20com%20a%20LogMova!" 
+             target="_blank" 
+             rel="noopener"
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-goldHover text-brand-purpleDark font-extrabold px-8 py-4 rounded-xl text-lg shadow-glow-gold transition-all duration-200 transform hover:-translate-y-1">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+            <span>Chamar no WhatsApp: (21) 98385-1651</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ OBRIGATÓRIO (Com assinatura exigida DHA Consultoria) -->
+  <footer class="bg-slate-900 text-white/80 text-sm pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- COLUNA 1: LOGO E DESCRIÇÃO -->
+        <div class="space-y-4">
+          <div class="bg-white p-3 rounded-2xl inline-block">
+            <img src="assets/img/logo.png" alt="LogMova Transportes" class="h-12 w-auto object-contain">
+          </div>
+          <p class="text-xs text-white/70 leading-relaxed">
+            Sua empresa vende. A LOGMOVA entrega! Logística urbana com cuidado, pontualidade e liderança feminina em todo o Rio de Janeiro e Grande Rio.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/logmovatransportes/" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-purple flex items-center justify-center text-white transition" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@logmovatransportes/shorts" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-brand-purple flex items-center justify-center text-white transition" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="https://wa.me/5521983851651" target="_blank" rel="noopener" class="w-9 h-9 rounded-full bg-white/10 hover:bg-emerald-600 flex items-center justify-center text-white transition" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUNA 2: NAVEGAÇÃO -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Links Rápidos</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#inicio" class="hover:text-brand-gold transition">Início</a></li>
+            <li><a href="#sobre" class="hover:text-brand-gold transition">Sobre Nós</a></li>
+            <li><a href="#servicos" class="hover:text-brand-gold transition">Nossos Serviços</a></li>
+            <li><a href="#cargas-sensiveis" class="hover:text-brand-gold transition">Cargas Sensíveis & Hortos</a></li>
+            <li><a href="#como-funciona" class="hover:text-brand-gold transition">Como Funciona</a></li>
+            <li><a href="#depoimentos" class="hover:text-brand-gold transition">Depoimentos</a></li>
+            <li><a href="#cobertura" class="hover:text-brand-gold transition">Área de Atuação</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 3: ESPECIALIDADES -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Especialidades</h4>
+          <ul class="space-y-2 text-xs text-white/70">
+            <li>• Transporte de Plantas & Hortos</li>
+            <li>• Logística para Viveiros & Floriculturas</li>
+            <li>• Frete Utilitário (Fiorino)</li>
+            <li>• Entregas para E-commerce & Lojas</li>
+            <li>• Coletas Rápidas no mesmo dia</li>
+            <li>• Rotas Programadas & Contratos Fixos</li>
+          </ul>
+        </div>
+
+        <!-- COLUNA 4: CONTATO -->
+        <div class="space-y-3">
+          <h4 class="font-heading font-bold text-white text-base">Atendimento</h4>
+          <div class="space-y-2.5 text-xs text-white/70">
+            <p class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
+              <a href="https://wa.me/5521983851651" target="_blank" rel="noopener" class="text-white hover:text-brand-gold font-semibold">(21) 98385-1651</a>
+            </p>
+            <p class="flex items-start gap-2">
+              <i class="fa-solid fa-map-pin text-brand-gold text-sm mt-0.5"></i>
+              <span>Rio de Janeiro - RJ e Região Metropolitana (Atendimento no estabelecimento do cliente)</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <i class="fa-solid fa-clock text-white/50 text-sm"></i>
+              <span>Segunda a Sábado | Janelas flexíveis de entrega</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CRÉDITOS E ASSINATURA OBRIGATÓRIA -->
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+        <div>
+          © 2026 LogMova Transportes. Todos os direitos reservados.
+        </div>
+        <div>
+          Desenvolvido por <a href="https://dhaconsultoria.com.br" target="_blank" rel="noopener" class="text-white hover:text-brand-gold font-semibold underline transition">DHA Consultoria</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP COM TOOLTIP PULSANTE -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    
+    <!-- Balão de chamada -->
+    <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20frete%20com%20a%20LogMova." 
+       target="_blank" 
+       rel="noopener"
+       class="hidden sm:inline-flex bg-white text-brand-dark text-xs font-bold px-3.5 py-2 rounded-full shadow-lg border border-slate-200 items-center gap-2 hover:bg-slate-50 transition">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+      <span>Cotação Rápida de Frete</span>
+    </a>
+
+    <!-- Botão Circular Verde -->
+    <a href="https://wa.me/5521983851651?text=Ol%C3%A1!%20Gostaria%20de%20um%20or%C3%A7amento%20de%20frete%20com%20a%20LogMova." 
+       target="_blank" 
+       rel="noopener"
+       class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white flex items-center justify-center text-3xl shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse-subtle"
+       aria-label="Falar no WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT DE COMPORTAMENTO -->
+  <script>
+    // Menu Mobile Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.getElementById('menuIcon');
+
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', () => {
+        const isHidden = mobileMenu.classList.toggle('hidden');
+        menuIcon.classList.toggle('fa-bars', isHidden);
+        menuIcon.classList.toggle('fa-xmark', !isHidden);
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuIcon.classList.add('fa-bars');
+          menuIcon.classList.remove('fa-xmark');
+        });
+      });
+    }
+
+    // Formulário Interativo do Simulador de Frete
+    const serviceButtons = document.querySelectorAll('.service-opt-btn');
+    const selectedServiceInput = document.getElementById('selectedService');
+    const freteForm = document.getElementById('freteForm');
+
+    serviceButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        serviceButtons.forEach(b => {
+          b.classList.remove('active', 'border-brand-purple', 'bg-brand-purpleSoft', 'text-brand-purple');
+          b.classList.add('border-slate-200', 'bg-white', 'text-slate-700');
+        });
+        btn.classList.add('active', 'border-brand-purple', 'bg-brand-purpleSoft', 'text-brand-purple');
+        btn.classList.remove('border-slate-200', 'bg-white', 'text-slate-700');
+        if (selectedServiceInput) {
+          selectedServiceInput.value = btn.getAttribute('data-val') || 'Frete';
+        }
+      });
+    });
+
+    if (freteForm) {
+      freteForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const servico = selectedServiceInput ? selectedServiceInput.value : 'Frete';
+        const origem = document.getElementById('origemBairro')?.value || '';
+        const destino = document.getElementById('destinoBairro')?.value || '';
+        const obs = document.getElementById('observacoesCarga')?.value || '';
+
+        let mensagem = `Olá, LogMova! Gostaria de cotar um frete:%0A` +
+                       `📦 *Tipo de Carga:* ${encodeURIComponent(servico)}%0A` +
+                       `📍 *Coleta:* ${encodeURIComponent(origem)}%0A` +
+                       `🏁 *Entrega:* ${encodeURIComponent(destino)}`;
+        
+        if (obs) {
+          mensagem += `%0A📝 *Observações:* ${encodeURIComponent(obs)}`;
+        }
+
+        const zapUrl = `https://wa.me/5521983851651?text=${mensagem}`;
+        window.open(zapUrl, '_blank');
+      });
+    }
+
+    // FAQ Accordion
+    const faqButtons = document.querySelectorAll('.faq-toggle');
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.fa-chevron-down');
+        const isOpen = !content.classList.contains('hidden');
+
+        // Fecha todos
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-toggle .fa-chevron-down').forEach(i => i.style.transform = 'rotate(0deg)');
+
+        // Alterna o clicado
+        if (!isOpen) {
+          content.classList.remove('hidden');
+          if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
